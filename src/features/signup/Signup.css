@@ -1,0 +1,179 @@
+.Signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+
+.Signup .signup-img img {
+  width: 13rem;
+}
+
+.Signup .email input,
+.Signup .email input::placeholder,
+.Signup .name input,
+.Signup .name input::placeholder,
+.Signup .phonenumber input,
+.Signup .phonenumber input::placeholder,
+.Signup .address input,
+.Signup .address input::placeholder,
+.Signup .password input,
+.Signup .password input::placeholder {
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+
+.Signup .email input::placeholder,
+.Signup .password input::placeholder,
+.Signup .name input::placeholder,
+.Signup .phonenumber input::placeholder,
+.Signup .address input::placeholder {
+  opacity: 0.7;
+}
+
+.Signup .email input,
+.Signup .name input,
+.Signup .phonenumber input,
+.Signup .address input,
+.Signup .password input {
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 27rem;
+  height: 63px;
+  border-radius: 10px;
+  border: 1px solid black;
+  outline: none;
+  margin: 0 0 0.75rem 0;
+}
+
+.Signup .signup a > button {
+  margin: 0.75rem 0;
+  height: 63px;
+  width: 27rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: white;
+  font-size: 25px;
+  background-color: var(--color-red);
+}
+
+.Signup .signup a > button:hover {
+  cursor: pointer;
+}
+
+.Signup p:nth-child(7) {
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  font-family: var(--font-family);
+  color: var(--color-text);
+  width: 27rem;
+  line-height: 175%;
+}
+
+.Signup p:nth-child(7) span {
+  color: blue;
+}
+
+.Signup p:nth-child(7) span:hover {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.Signup p:last-child {
+  text-align: center;
+  line-height: 1.75rem;
+  width: 27rem;
+  padding: 0.5rem 0 0.75rem 0;
+  font-size: 1.1rem;
+  font-family: var(--font-family);
+  color: var(--color-text);
+}
+
+.Signup p:last-child span {
+  color: blue;
+}
+
+.Signup p:last-child span:hover {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+@media screen and (max-width: 1000px) {
+  .Signup .signup-img img {
+    width: 15rem;
+  }
+
+  .Signup .email input,
+  .Signup .name input,
+  .Signup .phonenumber input,
+  .Signup .address input,
+  .Signup .password input,
+  .Signup .signup > a > button,
+  .Signup p:nth-child(7) {
+    width: 25rem;
+    height: 3.5rem;
+  }
+
+  .Signup .email input,
+  .Signup .name input,
+  .Signup .phonenumber input,
+  .Signup .address input,
+  .Signup .password input {
+    font-size: 1.2rem;
+  }
+
+  .Signup .signup > a > button {
+    font-size: 1.3rem;
+  }
+
+  .Signup .signup {
+    padding-top: 0.85rem;
+  }
+
+  .Signup p:last-child,
+  .Signup p:nth-child(7) {
+    font-size: 0.9rem;
+    line-height: 165%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Signup .login-img img {
+    width: 10rem;
+  }
+
+  .Signup .email input,
+  .Signup .name input,
+  .Signup .phonenumber input,
+  .Signup .address input,
+  .Signup .password input,
+  .Signup .signup > a > button,
+  .Signup p:nth-child(7) {
+    width: 23rem;
+    height: 2.85rem;
+  }
+
+  .Signup .email input,
+  .Signup .name input,
+  .Signup .phonenumber input,
+  .Signup .address input,
+  .Signup .password input {
+    font-size: 1rem;
+  }
+
+  .Signup .signup > a > button {
+    font-size: 1.15rem;
+  }
+
+  .Signup .signup {
+    padding-top: 0.85rem;
+  }
+
+  .Signup p:last-child,
+  .Signup p:nth-child(7) {
+    line-height: 150%;
+    font-size: 0.8rem;
+  }
+}

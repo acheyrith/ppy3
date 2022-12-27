@@ -1,0 +1,165 @@
+.Login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+
+.Login .login-img img {
+  width: 15rem;
+}
+
+.Login .email input,
+.Login .email input::placeholder,
+.Login .password input,
+.Login .password input::placeholder {
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+
+.Login .email input::placeholder,
+.Login .password input::placeholder {
+  opacity: 0.7;
+}
+
+.Login .email input,
+.Login .password input {
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 27rem;
+  height: 63px;
+  border-radius: 10px;
+  border: 1px solid black;
+  outline: none;
+  margin: 1rem 0;
+}
+
+.Login .forgot-password {
+  width: 27rem;
+  color: blue;
+  padding: 0.5rem 0 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.Login .forgot-password > a:hover {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.Login .signin a > button {
+  height: 63px;
+  width: 27rem;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: white;
+  font-size: 25px;
+  background-color: var(--color-red);
+}
+
+.Login .signin a > button:hover {
+  cursor: pointer;
+}
+
+.Login p:nth-child(6) {
+  padding: 1.5rem 0;
+  font-size: 1.1rem;
+  font-family: var(--font-family);
+  color: var(--color-text);
+}
+
+.Login p:nth-child(6) span {
+  color: blue;
+}
+
+.Login p:nth-child(6) span:hover {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.Login p:last-child {
+  line-height: 1.75rem;
+  width: 27rem;
+  padding: 1.5rem 0;
+  font-size: 1.1rem;
+  font-family: var(--font-family);
+  color: var(--color-text);
+}
+
+.Login p:last-child span {
+  color: blue;
+}
+
+.Login p:last-child span:hover {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+@media screen and (max-width: 1000px) {
+  .Login .login-img img {
+    width: 11rem;
+  }
+
+  .Login .email input,
+  .Login .password input,
+  .Login .forgot-password,
+  .Login .signin > a > button,
+  .Login p:last-child {
+    width: 25rem;
+    height: 3.5rem;
+  }
+
+  .Login .email input,
+  .Login .password input {
+    font-size: 1.2rem;
+  }
+
+  .Login .signin > a > button {
+    font-size: 1.3rem;
+  }
+
+  .Login .forgot-password {
+    font-size: 0.8rem;
+  }
+
+  .Login p:last-child,
+  .Login p:nth-child(6) {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Login .login-img img {
+    width: 10rem;
+  }
+
+  .Login .email input,
+  .Login .password input,
+  .Login .forgot-password,
+  .Login .signin > a > button,
+  .Login p:last-child {
+    width: 23rem;
+    height: 2.85rem;
+  }
+
+  .Login .email input,
+  .Login .password input {
+    font-size: 1rem;
+  }
+
+  .Login .signin > a > button {
+    font-size: 1.15rem;
+  }
+
+  .Login .forgot-password {
+    font-size: 0.75rem;
+  }
+
+  .Login p:last-child,
+  .Login p:nth-child(6) {
+    font-size: 0.8rem;
+  }
+}

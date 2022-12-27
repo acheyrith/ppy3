@@ -1,0 +1,121 @@
+.home__banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home__banner img {
+  margin-top: 2rem;
+  width: 86%;
+  height: 600px;
+  border-radius: 40px;
+  padding-bottom: 1rem;
+}
+
+.home__banner .left-arrow {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+}
+
+.home__banner .left-arrow img,
+.home__banner .right-arrow img {
+  height: 6.5rem;
+}
+
+.home__banner .right-arrow {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+}
+
+.home__banner .left-arrow:hover,
+.home__banner .right-arrow:hover {
+  cursor: pointer;
+}
+
+.home__banner .dots {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.home__banner .dots .dot {
+  margin: 0 1rem;
+  border: 0.35rem solid black;
+  border-radius: 50%;
+  opacity: 0.25;
+}
+
+.home__banner .dots .active-dot {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .home__banner img {
+    height: 350px;
+    padding-bottom: 1rem;
+  }
+
+  .home__banner .left-arrow img,
+  .home__banner .right-arrow img {
+    height: 5.5rem;
+  }
+
+  .home__banner .left-arrow {
+    left: 0.5rem;
+  }
+
+  .home__banner .right-arrow {
+    right: 0.5rem;
+  }
+
+  .home__banner .left-arrow,
+  .home__banner .right-arrow {
+    top: 50%;
+    transform: translateY(-65%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home__banner img {
+    width: 83%;
+    height: 275px;
+    padding-bottom: 1rem;
+  }
+
+  .home__banner .left-arrow img,
+  .home__banner .right-arrow img {
+    height: 4.5rem;
+  }
+
+  .home__banner .left-arrow {
+    left: 0.4rem;
+  }
+
+  .home__banner .right-arrow {
+    right: 0.4rem;
+  }
+
+  .home__banner .left-arrow,
+  .home__banner .right-arrow {
+    top: 50%;
+    transform: translateY(-65%);
+  }
+
+  .home__banner .dots .dot {
+    margin: 0 0.5rem;
+    border: 0.35rem solid black;
+    border-radius: 50%;
+    opacity: 0.25;
+  }
+
+  .home__banner .dots .active-dot {
+    opacity: 1;
+  }
+}

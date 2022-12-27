@@ -1,0 +1,120 @@
+.component__top-sale {
+  width: 100%;
+}
+
+.component__top-sale .title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 47px;
+  color: var(--color-text);
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.component__top-sale .all-blocks {
+  display: grid;
+  grid-template-columns: repeat(3, 310px);
+  gap: 15px;
+  text-align: center;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.component__top-sale .all-blocks .block-content {
+  height: 200px;
+  width: 310px;
+  background-color: var(--color-primary);
+  border-radius: 40px;
+  font-family: var(--font-family);
+  cursor: pointer;
+}
+
+.component__top-sale .all-blocks .block-content img {
+  padding: 5px 0;
+  width: 125px;
+  height: 125px;
+  background-color: transparent;
+}
+
+.component__top-sale .all-blocks .block-content h5 {
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 600;
+  padding: 2.5px 0;
+}
+
+.component__top-sale .all-blocks .block-content p,
+.component__top-sale .all-blocks .block-content .newPrice {
+  font-size: 12.5px;
+  line-height: 140%;
+  font-weight: 600;
+  color: var(--color-red);
+}
+
+.component__top-sale .all-blocks .block-content .oldPrice {
+  font-size: 11px;
+  text-decoration: line-through;
+}
+
+.component__top-sale .see-more {
+  font-family: var(--font-family);
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 29px;
+  text-decoration-line: underline;
+  cursor: pointer;
+  text-align: center;
+  padding: 2.5rem 0 2rem 0;
+}
+
+@media screen and (min-width: 1600px) {
+  .component__top-sale .all-blocks {
+    grid-template-columns: repeat(4, 310px);
+  }
+}
+
+@media screen and (min-width: 2100px) {
+  .component__top-sale .all-blocks {
+    grid-template-columns: repeat(5, 310px);
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .component__top-sale .all-blocks {
+    grid-template-columns: repeat(6, 310px);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .component__top-sale .title {
+    font-size: 30px;
+  }
+
+  .component__top-sale .all-blocks {
+    grid-template-columns: repeat(2, 310px);
+  }
+
+  .component__top-sale .see-more {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .component__top-sale .title {
+    font-size: 25px;
+    margin: 0.75rem 0;
+  }
+
+  .component__top-sale .all-blocks {
+    grid-template-columns: repeat(1, 310px);
+  }
+
+  .component__top-sale .see-more {
+    font-size: 15px;
+    padding: 0.75rem 0;
+    margin-bottom: 1.25rem;
+  }
+}

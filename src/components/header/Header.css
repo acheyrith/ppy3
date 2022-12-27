@@ -1,0 +1,150 @@
+.Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 8rem;
+}
+
+.header__logo {
+  min-width: 15rem;
+  max-width: 15rem;
+}
+
+.header__logo > img {
+  width: 100%;
+}
+
+.header__search {
+  position: relative;
+  width: 40rem;
+  outline: none;
+}
+
+.header__search input::placeholder {
+  font-size: 1.5rem;
+  font-family: var(--font-family);
+}
+
+.header__search .search-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  font-size: 1.5rem;
+  color: var(--color-text);
+  transform: translateY(-50%);
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.header__search > input {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  border: none;
+  color: var(--color-text);
+  font-family: var(--font-family);
+  width: 100%;
+  height: 50px;
+  background: #f3f3f3;
+  border-radius: 30px;
+}
+
+.header__search input:focus {
+  outline: none;
+}
+
+.header__options {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__options .header__account,
+.header__options .header__cart {
+  height: 5rem;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  color: var(--color-text);
+}
+
+.header__options .header__account .a-span,
+.header__options .header__cart .a-span {
+  font-size: 1.25rem;
+}
+
+.header__options .header__account:hover,
+.header__options .header__cart:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.header__options .header__account > a > img,
+.header__options .header__cart > a > img {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1000px) {
+  .Header {
+    padding-right: 0rem;
+    padding-left: 0;
+  }
+
+  .header__logo {
+    min-width: 10rem;
+    max-width: 10rem;
+  }
+
+  .header__search {
+    width: 25rem;
+  }
+
+  .header__search > input {
+    height: 40px;
+    font-size: 1.1rem;
+  }
+
+  .header__search > input::placeholder {
+    font-size: 1.1rem;
+  }
+
+  .header__search .search-icon {
+    width: 1rem;
+  }
+
+  .header__options {
+    gap: 0;
+  }
+
+  .header__options > div > a > img {
+    width: 1.2rem;
+  }
+
+  .header__options > div > a {
+    font-size: 1rem;
+  }
+
+  .header__options .header__account .a-span,
+  .header__options .header__cart .a-span {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header__search > input,
+  .header__options > div > .a-span {
+    display: none;
+  }
+
+  .header__search .search-icon,
+  .header__options > div > a > img {
+    width: 1.35rem;
+    cursor: pointer;
+  }
+}

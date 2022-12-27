@@ -1,0 +1,382 @@
+.details {
+  display: flex;
+  justify-content: center;
+}
+
+.details__container {
+  display: flex;
+  gap: 90px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 120px;
+  margin-left: -10rem;
+}
+
+.details__container .details__img img {
+  width: 550px;
+  height: 600px;
+}
+
+.details__container .details__description {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: flex-start;
+  font-family: var(--font-family);
+}
+
+.details__container .details__description a {
+  font-weight: 400;
+  font-size: 17.5px;
+  line-height: 140%;
+  opacity: 0.5;
+  padding: 5px 0;
+  width: fit-content;
+}
+
+.details__container .details__description a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.details__container .details__description h5 {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 140%;
+  padding: 0 0 5px 0;
+}
+
+.details__container .details__description p:nth-child(3) {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 159.02%;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.details__container .details__description h6 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 140%;
+  margin: 22px 0 0 0;
+}
+
+.details__container .details__description .sale-price1 {
+  color: var(--color-red);
+  font-size: 1.2rem;
+  line-height: 140%;
+  margin: 1rem 0 0 0;
+}
+
+.details__container .details__description .all-price {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-end;
+  margin: 1rem 0 0 0;
+}
+
+.details__container .details__description .old-price {
+  color: var(--color-red);
+  font-size: 1rem;
+  text-decoration: line-through;
+}
+
+.details__container .details__description .sale-price2 {
+  color: var(--color-red);
+  font-size: 1.2rem;
+}
+
+.details__container .details__description .quantity-btn {
+  display: flex;
+  gap: 1rem;
+  width: 110px;
+  height: 37px;
+  border: 1px solid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 27px;
+  margin-bottom: 3rem;
+  position: relative;
+  text-align: center;
+}
+
+.details__container .details__description .quantity-btn button {
+  border: none;
+  padding: 0.4rem;
+  background-color: transparent;
+  font-size: 30px;
+}
+
+.details__container .details__description .quantity-btn .quantity-btn__sub {
+  position: absolute;
+  left: 0.2rem;
+}
+
+.details__container .details__description .quantity-btn .quantity-btn__add {
+  position: absolute;
+  right: 0.2rem;
+}
+
+.details__container .details__description .sale-conditions {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin: 0.4rem 0;
+}
+
+.details__container .details__description .sale-conditions p {
+  font-size: 17px;
+}
+
+.details__container
+  .details__description
+  .sale-conditions
+  .sale-conditions__icon {
+  opacity: 0.65;
+}
+
+.details__container .details__description .options {
+  margin: 1rem 0 0 0;
+}
+
+.details__container .details__description .options .add-to-cart button,
+.details__container .details__description .options .buy-now button {
+  width: 600px;
+  height: 50px;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-family);
+}
+
+.details__container .details__description .options .add-to-cart button {
+  color: #000;
+  background-color: var(--color-primary);
+  font-size: 23px;
+}
+
+.details__container .details__description .options .buy-now button {
+  color: #fff;
+  background-color: var(--color-red);
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1400px) {
+  .details__container {
+    margin-left: -5rem;
+    gap: 40px;
+  }
+
+  .details__container .details__img img {
+    width: 400px;
+    height: 450px;
+  }
+
+  .details__container .details__description {
+    height: 450px;
+  }
+
+  .details__container .details__description a {
+    font-size: 16px;
+    line-height: 120%;
+    padding: 0 0 4px 0;
+  }
+
+  .details__container .details__description h5 {
+    font-size: 30px;
+    line-height: 120%;
+    padding: 0 0 4px 0;
+  }
+
+  .details__container .details__description p:nth-child(3) {
+    font-size: 16.5px;
+    line-height: 120%;
+  }
+
+  .details__container .details__description h6 {
+    font-size: 27.5px;
+    line-height: 100%;
+    margin: 20px 0 0 0;
+  }
+
+  .details__container .details__description .sale-price1 {
+    font-size: 1rem;
+    line-height: 120%;
+  }
+
+  .details__container .details__description .all-price {
+    gap: 0.6rem;
+  }
+
+  .details__container .details__description .old-price {
+    font-size: 0.9rem;
+  }
+
+  .details__container .details__description .sale-price2 {
+    font-size: 1rem;
+  }
+
+  .details__container .details__description .quantity-btn {
+    width: 90px;
+    height: 30px;
+    font-size: 23px;
+    margin-bottom: 2rem;
+  }
+
+  .details__container .details__description .quantity-btn button {
+    font-size: 25px;
+  }
+
+  .details__container .details__description .sale-conditions p {
+    font-size: 16px;
+  }
+
+  .details__container .details__description .options {
+    margin: 0.85rem 0 0 0;
+  }
+
+  .details__container .details__description .options .add-to-cart button,
+  .details__container .details__description .options .buy-now button {
+    width: 500px;
+    height: 40px;
+  }
+
+  .details__container .details__description .options .add-to-cart button {
+    font-size: 20px;
+  }
+
+  .details__container .details__description .options .buy-now button {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .details__container {
+    margin-left: -3rem;
+    margin-top: -2rem;
+    gap: 30px;
+  }
+
+  .details__container .details__img img {
+    width: 300px;
+    height: 350px;
+  }
+
+  .details__container .details__description {
+    height: 350px;
+  }
+
+  .details__container .details__description a {
+    font-size: 15px;
+    line-height: 110%;
+    padding: 0 0 3px 0;
+  }
+
+  .details__container .details__description h5 {
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  .details__container .details__description p:nth-child(3) {
+    font-size: 15.5px;
+  }
+
+  .details__container .details__description h6 {
+    font-size: 24.5px;
+    margin: 15px 0 0 0;
+  }
+
+  .details__container .details__description .sale-price1,
+  .details__container .details__description .sale-price2 {
+    font-size: 0.85rem;
+  }
+
+  .details__container .details__description .old-price {
+    font-size: 0.8rem;
+  }
+
+  .details__container .details__description .quantity-btn {
+    width: 80px;
+    height: 27px;
+    font-size: 21px;
+    margin-bottom: 1rem;
+  }
+
+  .details__container .details__description .quantity-btn button {
+    font-size: 23px;
+  }
+
+  .details__container .details__description .sale-conditions p {
+    font-size: 15px;
+  }
+
+  .details__container .details__description .options .add-to-cart button,
+  .details__container .details__description .options .buy-now button {
+    width: 320px;
+    height: 35px;
+  }
+
+  .details__container .details__description .options .add-to-cart button {
+    font-size: 17px;
+  }
+
+  .details__container .details__description .options .buy-now button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .details__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 10rem 0;
+  }
+
+  .details__container .details__description {
+    padding: 0 1.5rem;
+  }
+
+  .details__container .details__description h5 {
+    font-size: 22px;
+  }
+
+  .details__container .details__description h6 {
+    font-size: 21.5px;
+  }
+
+  .details__container .details__description .options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .details__container .details__description .quantity-btn {
+    font-size: 21px;
+    margin-bottom: 2rem;
+  }
+
+  .details__container .details__description .quantity-btn button {
+    font-size: 20px;
+  }
+
+  .details__container .details__description .options .add-to-cart button,
+  .details__container .details__description .options .buy-now button {
+    width: 275px;
+    height: 33px;
+  }
+
+  .details__container .details__description .options .add-to-cart button {
+    font-size: 15px;
+  }
+
+  .details__container .details__description .options .buy-now button {
+    font-size: 16px;
+  }
+}
